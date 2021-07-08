@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signals & Systems</title>
+    <!--
+    <link href = 'https://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet'>
+	-->
+    <link rel = "stylesheet" type = "text/css" href = "styles/prob.css">
+
+
+    <script>
+        const menuSlide = () =>{
+            const hamburger = document.querySelector(".hamburger");
+            const sideBar = document.querySelector(".side-bar");
+            sideBar.classList.toggle("side-bar-active");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="hamburger" onclick="menuSlide()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div class="side-bar">
+        <h2>Contents</h2>
+        <hr>
+        <a href="index.html">Home</a>
+        <div class="hoverable-content">
+            <a href="probability.html">Probability</a>
+            <div class="hoverable-subsub">
+                <a href="probability.html#rop" class="sub-content">Review of Probability</a>
+                <a href="probability.html#pd" class="sub-content">Probability Distributions</a>
+            </div>
+        </div>
+        <a href="rv.html">Random Variables</a>
+        <a href="covcorr.html">Covarinace & Correlation</a>
+        
+        
+        <div class="hoverable-content">
+            <a href="statistics.html">Statistics</a>
+            <div class="hoverable-subsub">
+                <a href="statistics.html#descriptive-stats" class="sub-content">Descriptive Statistics</a>
+                <a href="statistics.html#inferential-stats" class="sub-content">Inferential Statistics</a>
+            </div>
+        </div>
+           
+        <a href="DE.html">Differential Equations</a>
+        <a href="convolution.html" class="current-topic">Convolution of signals</a>
+
+    </div>
+
+
+
+    <div class="main-vids">
+        <div class="topic">
+            <h2>Convolution of Signals</h2>
+            <!-- <hr> -->
+        </div>
+        <iframe src="https://www.youtube.com/embed/_8LwWEGNyyM"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+         <div class="brief-info">
+             <p>
+                 The above video explains the basic intuition behind the concept of convolution. It explains
+                 how convolution of two functions is the <b>continous analog of polynomial multiplication</b>.
+             </p>
+            
+         </div>
+            
+
+        <iframe src="https://www.youtube.com/embed/N-zd-T17uiE?start=0&end=390" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <div class="brief-info">
+           <p>This video introduces the convolution of two functions and provides the  
+               intuition behind convolution integral. It demonstrates how convolution of two 
+               functions can be calculated by <b>overlapping</b> while one function sweeps across the other.
+            </p>
+        </div>
+
+
+        <h3>Continuous Time Convolution</h3>
+        <iframe src="https://www.youtube.com/embed/_HATc2zAhcY?start=150&end=1580" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>This video talks about the continuous time convolution where it discusses the definition of <b>convolution integral</b>, its formula, 
+                steps to perform convolution operation  and demonstrates continuous time convolution by providing an example and its solution.</p>
+        </div>
+
+        <h3>Discrete Time Convolution</h3>
+        <iframe src="https://www.youtube.com/embed/A6qR7UhLvng" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>This video discusses the discrete time convolution or the <b>convolution sum</b>, 
+                its formula and explains it with the help of a simple example.
+            </p>
+        </div>
+
+        <h3>Applications of Convolution</h3>
+        <div class="brief-info">
+            <ul>
+                <li>Digital Image Processing</li>
+                <li>Convolutional Neural Network (CNN)</li>
+                <li>Convolution of the input signal and the impulse response gives the output of Linear Time Invariant (LTI) system</li>
+                <li>The probability distribution of the sum of two independent random variables is the convolution of their individual
+                    distributions
+                </li>
+            </ul>
+        </div>
+        
+
+
+</body>

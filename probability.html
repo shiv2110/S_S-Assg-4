@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signals & Systems</title>
+    <!--
+    <link href = 'https://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet'>
+	-->
+    <link rel = "stylesheet" type = "text/css" href = "styles/prob.css">
+
+
+    <script>
+        const menuSlide = () =>{
+            const hamburger = document.querySelector(".hamburger");
+            const sideBar = document.querySelector(".side-bar");
+            sideBar.classList.toggle("side-bar-active");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="hamburger" onclick="menuSlide()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div class="side-bar">
+        <h2>Contents</h2>
+        <hr>
+        <a href="index.html">Home</a>
+        <div class="hoverable-content">
+            <a href="probability.html" class="current-topic">Probability</a>
+            <div class="hoverable-subsub">
+                <a href="#rop" class="sub-content">Review of Probability</a>
+                <a href="#pd" class="sub-content">Probability Distributions</a>
+            </div>
+        </div>
+        <a href="rv.html">Random Variables</a>
+        <a href="covcorr.html">Covarinace & Correlation</a>
+        
+        
+        <div class="hoverable-content">
+            <a href="statistics.html">Statistics</a>
+            <div class="hoverable-subsub">
+                <a href="statistics.html#descriptive-stats" class="sub-content">Descriptive Statistics</a>
+                <a href="statistics.html#inferential-stats" class="sub-content">Inferential Statistics</a>
+            </div>
+        </div>
+           
+        <a href="DE.html">Differential Equations</a>
+        <a href="convolution.html">Convolution of signals</a>
+
+    </div>
+
+
+
+    <div class="main-vids" id="rop">
+        <div class="topic">
+            <h2>Review of Probability</h2>
+            <!-- <hr> -->
+        </div>
+        <iframe src="https://www.youtube.com/embed/kGgWe58fbm4" frameborder="0" allow="accelerometer; autoplay;
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture; mute=1&autoplay=0" allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                The above video sheds light on Basic Probability Concepts like random experiments, sample space, events and its types,
+                addition rule, conditional probability and its properties, multiplication theorem, independent events and total probability theorem.
+            </p>
+            <ul>
+                <li><b>Probability</b> is Number of favourable outcomes divided by the total number of outcomes 
+                    <a href="https://www.youtube.com/embed/kGgWe58fbm4?start=43">0:43</a></li>
+                 
+                <li><b>Sample Space</b> is the collection of all possible outcomes of an experiment
+                    <a href="https://www.youtube.com/embed/kGgWe58fbm4?start=170">2:50</a>
+                </li>
+                <li>An <b>Event</b> is an outcome of a random experiment. It is the subset of the sample space
+                </li>
+                <li>Event that is sure to happen or whose probability is 1 is called a <b>sure event</b>, whereas the event whose probability
+                        is 0 is said to be an <b>impossible event</b>
+                </li>
+                <li>Two events are said to be <b>mutually exclusive</b> if they cannot occur at the same time, implies that the 
+                        probability of the intersection of the events is 0
+                </li>
+                <li>A set of events is said to be <b>exhaustive</b> if atleast one of them occurs. Union of these events is sample space
+                </li>
+                <li>With the <b>addition rule of probability</b>, probability of unuion of two or more events can be found
+                    <a href="https://www.youtube.com/embed/kGgWe58fbm4?start=390">6:30</a>
+                </li>
+                <li><b>Conditional probability</b> is the probability of an event occuring, given the occurence 
+                    of a prevoius event
+                    <a href="https://www.youtube.com/embed/kGgWe58fbm4?start=840">14:00</a>
+                </li>
+                <li><b>Multiplication theorem</b> on probability states that the probability of simultaneous occurrence of two events A and B 
+                    is equal to the product of the probability of the other, given that the first one has occurred. 
+                    <a href="https://www.youtube.com/embed/kGgWe58fbm4?start=1595">26:35</a>
+                </li>
+                <li>Two or more events are said to be <b>independent</b> if the occurence of one event doesn't impact 
+                    the other events
+                    <a href="https://www.youtube.com/embed/kGgWe58fbm4?start=1836">30:36</a>
+                </li>
+                <!-- <li><b>Total probability theorem</b> 
+                    <a href="https://www.youtube.com/embed/kGgWe58fbm4?start=1905">31:45</a>
+                </li> -->
+            </ul>
+
+
+        </div>
+
+        <!-- Random Experiment, Defenition of Probability  -  0:43
+        Sample Space, events, types of events  -  2:50
+        Addition Rule  -  6:30
+        Conditional Probability  -  14:00
+        Properties of Conditional Probability  -  18:15
+        Mutiplication theorem of Probability  -  26:35
+        Independent Events  -  30:36
+        Total Probability Theorem  -  31:45 -->
+
+        <div class="topic" id="pd">
+            <h2>Probability Distributions</h2>
+            <!-- <hr> -->
+        </div>
+        <iframe 
+        src="https://www.youtube.com/embed/YXLVjCKVP7U?start=28&autoplay=0&mute=1"allowfullscreen>
+        </iframe>
+        <div class="brief-info">
+            <p>The above video will provide a general insight on what probability distribution functions, cumulative
+                distribution functions are.</p>
+            <ul>
+                <li>A <b>probability distribution function</b> gives the occurrence of different possible outcomes for an
+                    experiment. It can be described by either a <b>probability mass function, probability density function
+                    or cumulative distribution functions</b>.</li>
+                <li>A probability mass function <b>(PMF)</b> gives the probability that a discrete random variable is equal to
+                    some value</li>
+                <li>A probability density function <b>(PDF)</b> value at any given sample (or point) in the sample space
+                    (the set of possible values taken by the random variable) can be interpreted as providing a relative
+                    likelihood that the value of the random variable would equal that sample</li>
+                <li>A cumulative distribution function <b>(CDF)</b> evaluates the probability that X will take a value less than or
+                    equal to x for a discrete random variable.</li>
+            </ul>
+
+            <!-- <p>
+                This is the most kawaii video on Earth!! Consists of Boruto, Sarada and the 
+                <br>
+                most kawaii Mitsuki whose picture I drew when there was no internet for 40min.
+                <br>
+                Watch and rewatch this video until the day you die!!!
+            </p> -->
+        </div>
+        <iframe 
+        src="https://www.youtube.com/embed/b9a27XN_6tg?start=18&autoplay=0&mute=1"allowfullscreen>
+        </iframe>
+        <div class="brief-info">
+            <p>The above video will very quickly summarise most of the discreet and continuous distributions of
+                probability. It contains: Binomial, Bernoulli, Poisson, Normal, Standard Normal, Student T and Chi-
+                Squared</p>
+            <ul>
+                <li>Probability distributions are usually divided into two classes: discrete probability distributions or
+                    continuous probability distributions</li>
+                <li>A <b>discrete probability distribution</b> is the probability distribution of a random variable that can take
+                    on only a countable number of values. They include Poisson distribution, Bernoulli distribution,
+                    binomial distribution, geometric distribution</li>
+                <li>A <b>continuous probability distribution</b> is a probability distribution whose support is an uncountable
+                    set, such as an interval in the real line. They are uniquely characterized by a cumulative distribution
+                    function that can be used to calculate the probability for each subset of the support. They include
+                    Normal distribution, Uniform Distributions, Chi-squared, and more</li>
+            </ul>
+        </div>
+
+
+        <div class="extra-info">
+            <p>For a more detailed explanation of each type of distribution, or to check out distributions that 
+                might have been missed out in the summary of the above, 
+                check out this link <a href="http://www.zstatistics.com/videos#/distributions">http://www.zstatistics.com/videos#/distributions</a>  for detailed explanations.
+            </p>
+        </div>
+        <p>Or for a shorter explanation, you could use the videos in this playlist: </p>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLaFfQroTgZnzbfK-Rie19FdV6diehETQy" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+    </div>
+
+
+</body>

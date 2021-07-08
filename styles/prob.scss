@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+$one-dark: #282c34;
+$hover-color: #d3d3d3;
+
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins';
+}
+
+.side-bar{
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: $one-dark;
+  overflow-x: hidden;
+  padding-top: 3em;
+
+  .hoverable-subsub{
+    display: none;
+    background-color: #353536;
+    width: 70%;
+    margin-left: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .hoverable-subsub a {
+    color: white;
+    //padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .sub-content{
+    //padding-left: 5em;
+    margin-top: 0;
+    padding-top: 0.5em;
+  }
+  
+
+  h2{
+    letter-spacing: 2px;
+    padding-left: 1em;
+    color: white;
+    text-transform: uppercase;
+    
+  }
+
+  hr{
+    width: 52%;
+    margin-left: 1.5em;
+    
+  }
+
+  a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding-top: 2em;
+    padding-left: 1.5em;
+    letter-spacing: 1px;
+  }
+
+  .current-topic{
+    font-weight: bolder;
+    color: blueviolet;
+    
+  }
+  .hoverable-content:hover .hoverable-subsub{
+    display: block;
+  }
+
+  a:hover{
+    color: $hover-color;
+  }
+
+  // a:active{
+  //   color: blueviolet;
+  // }
+}
+
+.hamburger{
+  display: none;
+  margin: 0;
+  padding-left: 1.3em;
+  //z-index: 1;
+  cursor: pointer;
+  
+}
+.hamburger{
+  div{
+    width: 21px;
+    margin: 5px;
+    height: 3px;
+    background-color: white;
+  }
+
+}
+
+.main-vids{
+  position: relative;
+  //overflow: hidden;
+  
+  
+  padding-top: 2em;
+  //width: 100%;
+  h2{
+    padding-left: 40%;
+    letter-spacing: 2px;
+    color: $one-dark;
+  }
+  .corr-img{
+    width: 45%;
+    height: 50%;
+    padding-left: 40%;
+    padding-bottom: 1em;
+  }
+  h3{
+    color: $one-dark;
+    padding-left: 40%;
+    letter-spacing: 2px;
+  }
+  hr{
+    height: 1.5px;
+    background-color: #D8D7D8;
+    width: 50%;
+    margin-left: 40%;
+    margin-right: 30%;
+  }
+
+  iframe{
+    padding-left: 40%;
+    margin-top: 2em;
+    border: none;
+    width: 650px; 
+    height: 360px; 
+    padding-bottom: 3%;
+  }
+
+  ul{
+    padding-top: 1em;
+    padding-left: 40%;
+    padding-right: 10%;
+    padding-bottom: 1em;
+    
+  }
+
+  li{
+    padding-bottom: 0.5em;
+  }
+
+  p{
+    padding-top: 0;
+    padding-left: 40%;
+    padding-right: 10%;
+    padding-bottom: 1em;
+    //padding-left: 45%;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+
+  // iframe{
+  //   position: absolute;
+
+  // }
+
+}
+
+// @media only screen and (max-width: 3020px){
+//   .main-vids{
+//     padding-left: 20%;
+//   }
+
+// }
+
+
+
+@media only screen and (max-width: 768px) {
+  html{
+      font-size: 15px;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .side-bar{
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0.4em;
+    //right: 200px;
+    height: 70%;
+    width: 100%;
+    transform: translate3d(-100vw, 0, 0);
+
+    transition: all 0.5s ease-in;
+    border-radius: 9.5em;
+
+    a{
+      padding-left: 0.25em;
+    }
+
+    h2, hr{
+      display: none;
+    }
+
+
+  }
+  .side-bar-active{
+    transform: translate3d(0vw, 0, 0);
+  
+  }
+  .hamburger{
+    position: fixed;
+    z-index: 2;
+    display: block;
+    padding-top: 1.15em;
+    //z-index: 1;
+  }
+
+  .hamburger{
+    div{
+      background-color: $one-dark;
+    }
+  }
+
+  .main-vids{
+    padding-top: 0.003em;
+    //padding-left: 5%;
+    h2{
+      // position: fixed;
+      padding-top: 0;
+      padding-left: 3em;
+    }
+    h3{
+      padding-left: 5%;
+    }
+    hr{
+      margin-left: 4.7em;
+      width: 70%;
+    }
+    .corr-img{
+      padding-left: 3em;
+      width: 80%;
+      height: 70%;
+      //padding-bottom: 1em;
+    }
+
+
+    iframe{
+      padding-left: 5%;
+      width: 435px;
+      height: 270px;
+    }
+
+    ul{
+      padding-left: 10%;
+    }
+    p{
+      padding-left: 5%;
+    }
+
+    
+  }
+
+}

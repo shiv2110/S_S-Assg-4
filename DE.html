@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signals & Systems</title>
+    <!--
+    <link href = 'https://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet'>
+	-->
+    <link rel = "stylesheet" type = "text/css" href = "styles/prob.css">
+
+
+    <script>
+        const menuSlide = () =>{
+            const hamburger = document.querySelector(".hamburger");
+            const sideBar = document.querySelector(".side-bar");
+            sideBar.classList.toggle("side-bar-active");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="hamburger" onclick="menuSlide()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div class="side-bar">
+        <h2>Contents</h2>
+        <hr>
+        <a href="index.html">Home</a>
+        <div class="hoverable-content">
+            <a href="probability.html">Probability</a>
+            <div class="hoverable-subsub">
+                <a href="probability.html#rop" class="sub-content">Review of Probability</a>
+                <a href="probability.html#pd" class="sub-content">Probability Distributions</a>
+            </div>
+        </div>
+        <a href="rv.html">Random Variables</a>
+        <a href="covcorr.html">Covarinace & Correlation</a>
+        
+        
+        <div class="hoverable-content">
+            <a href="statistics.html">Statistics</a>
+            <div class="hoverable-subsub">
+                <a href="statistics.html#descriptive-stats" class="sub-content">Descriptive Statistics</a>
+                <a href="statistics.html#inferential-stats" class="sub-content">Inferential Statistics</a>
+            </div>
+        </div>
+           
+        <a href="DE.html" class="current-topic">Differential Equations</a>
+        <a href="convolution.html">Convolution of signals</a>
+
+    </div>
+
+
+
+    <div class="main-vids">
+        <div class="topic">
+            <h2>Review of Differential Equations</h2>
+            <!-- <hr> -->
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UI7VVBM46Tg"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+           
+        <div class="brief-info">
+            <p>This video gives an introduction to differential equations. 
+            It consists of : </p>
+            <ul>
+                <li>
+                    An equation involving one dependent variable and its derivatives w.r.t one or more independent
+                    variables is called a <b>Differential Equation</b>
+                    <a href="https://www.youtube.com/embed/UI7VVBM46Tg?start=14&end=116">0:14-1:56</a>
+                </li>
+                <li>
+                    The order and degree of a differential equation :
+                    The <b>order</b> of an ordinary differential equation is defined to be the order of the highest order derivative occuring in the equation.
+                    The <b>degree</b> of an ordinary differential equation is defined to be the power of the highest order derivative occuring in the equation.
+                    <a href="https://www.youtube.com/embed/UI7VVBM46Tg?start=134&end=599">2:14-9:59</a>
+                </li>
+            </ul>   
+        </div>
+
+        <h3>First Order Differential Equations</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lxGArmr4moI"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>The video describes the methods to solve and/or the form of the general solutions of several forms of first order 
+                differential equations. It consists of :</p>
+            <ul>
+                <li>
+                    Variable separable method <a href="https://www.youtube.com/embed/lxGArmr4moI?start=3742&end=3835">1:02:22-1:03:55</a>
+                </li>
+                <li>
+                    Homogenous equations <a href="https://www.youtube.com/embed/lxGArmr4moI?start=5937&end=6106">1:38:57-1:41:46</a>
+                </li>
+                <li>
+                    Bernoulli's equations <a href="https://www.youtube.com/embed/lxGArmr4moI?start=6549&end=6953">1:49:09-1:55:53</a>
+                </li>
+                <li>
+                    Exact equations <a href="https://www.youtube.com/embed/lxGArmr4moI?start=7352&end=7581">2:02:32-2:06:21</a>
+                </li>
+            </ul>  
+        </div>
+
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gd1FYn86P0c"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                This video describes how to find the general solution of a linear first order differential equation.
+                The solution which contains as many arbitrary constants as the order of the differential equation is called 
+                the <b>general solution</b> of the differential equation.
+                <a href="https://www.youtube.com/embed/gd1FYn86P0c?start=0&end=70">0:00-1:10</a>
+
+            </p>
+        </div>
+
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eTrUokWOf7k"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                The above video explains the methods to solve a non-homogeneous equation along with examples
+                <!-- <a href="https://www.youtube.com/embed/P2TiR2MyObU?start=73&end=823">1:13-13:43</a> -->
+            </p>
+        </div>
+
+
+        <h3>First Order Higher Degree Differential Equations</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Rm5vmtxm94s"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                The video explains how to find the general solution of a first order higher degree equation in 
+                Clairaut’s Form and the singular solution of a first order higher degree equation with an example
+                <a href="https://www.youtube.com/embed/Rm5vmtxm94s?start=0&end=236">0:00-3:56</a>
+            </p>
+
+        </div>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FuxgDeY-ZJo" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                The video above describes the method to find the solution of a first order higher degree equation using 
+                Picard's Method of successive approximations.
+                <a href="https://www.youtube.com/embed/FuxgDeY-ZJo?start=0&end=318">0:00-5:18</a>
+            </p>
+
+        </div>
+
+
+
+        <h3>Linear Higher Order Differential Equations</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7vwDp94wEhg"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>The above video gives an introduction to linear higher order differential equations. It consists of: </p> 
+            <ul>
+                <li>
+                    What a linear higher order differential equation is
+                    <a href="https://www.youtube.com/embed/7vwDp94wEhg?start=0&end=84">0:00-1:24</a>
+                </li>
+                <li>
+                    Existence and uniqueness of a solution
+                    <a href="https://www.youtube.com/embed/7vwDp94wEhg?start=109&end=185">1:49-3:05</a>     
+                </li>
+                <li>
+                    Principle of Superposition
+                    <a href="https://www.youtube.com/embed/7vwDp94wEhg?start=200&end=263">3:20-4:23</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u-ympqH2SBs"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                This explains how to solve higher order homogeneous linear equations with constant coefficients 
+                and the general solution for the different types of roots
+                <a href="https://www.youtube.com/embed/u-ympqH2SBs?start=0&end=494">0:00-8:14</a>
+            </p>
+        </div>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/X7pzGyfRx9A"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                The above video describes how to solve a higher order homogeneous linear equation using variation of parameters
+                <a href="https://www.youtube.com/embed/X7pzGyfRx9A?start=0&end=175">0:00-2:55</a>
+
+            </p>
+        </div>
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6csP7dw0XTY"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                The video explains how to solve a higher order homogeneous linear equation using power series solution with an example.	
+            </p>
+        </div>
+
+
+        <p>For additional reference, check out the below playlist by Prof. Sachin Bhalekar, School of Mathematics, University of Hyderabad.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLenrStro6jjQ53dIyWEYAYOoTCTwDb4f0" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>

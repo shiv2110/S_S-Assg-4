@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins';
+}
+
+.side-bar {
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: #282c34;
+  overflow-x: hidden;
+  padding-top: 3em;
+}
+
+.side-bar .hoverable-subsub {
+  display: none;
+  background-color: #353536;
+  width: 70%;
+  margin-left: 2em;
+  padding: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.side-bar .hoverable-subsub a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.side-bar .sub-content {
+  margin-top: 0;
+  padding-top: 0.5em;
+}
+
+.side-bar h2 {
+  letter-spacing: 2px;
+  padding-left: 1em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.side-bar hr {
+  width: 52%;
+  margin-left: 1.5em;
+}
+
+.side-bar a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding-top: 2em;
+  padding-left: 1.5em;
+  letter-spacing: 1px;
+}
+
+.side-bar .current-topic {
+  font-weight: bolder;
+  color: blueviolet;
+}
+
+.side-bar .hoverable-content:hover .hoverable-subsub {
+  display: block;
+}
+
+.side-bar a:hover {
+  color: #d3d3d3;
+}
+
+.hamburger {
+  display: none;
+  margin: 0;
+  padding-left: 1.3em;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 21px;
+  margin: 5px;
+  height: 3px;
+  background-color: white;
+}
+
+.main-vids {
+  position: relative;
+  padding-top: 2em;
+}
+
+.main-vids h2 {
+  padding-left: 40%;
+  letter-spacing: 2px;
+  color: #282c34;
+}
+
+.main-vids .corr-img {
+  width: 45%;
+  height: 50%;
+  padding-left: 40%;
+  padding-bottom: 1em;
+}
+
+.main-vids h3 {
+  color: #282c34;
+  padding-left: 40%;
+  letter-spacing: 2px;
+}
+
+.main-vids hr {
+  height: 1.5px;
+  background-color: #D8D7D8;
+  width: 50%;
+  margin-left: 40%;
+  margin-right: 30%;
+}
+
+.main-vids iframe {
+  padding-left: 40%;
+  margin-top: 2em;
+  border: none;
+  width: 650px;
+  height: 360px;
+  padding-bottom: 3%;
+}
+
+.main-vids ul {
+  padding-top: 1em;
+  padding-left: 40%;
+  padding-right: 10%;
+  padding-bottom: 1em;
+}
+
+.main-vids li {
+  padding-bottom: 0.5em;
+}
+
+.main-vids p {
+  padding-top: 0;
+  padding-left: 40%;
+  padding-right: 10%;
+  padding-bottom: 1em;
+}
+
+.main-vids a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .side-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0.4em;
+    height: 70%;
+    width: 100%;
+    -webkit-transform: translate3d(-100vw, 0, 0);
+            transform: translate3d(-100vw, 0, 0);
+    -webkit-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    border-radius: 9.5em;
+  }
+  .side-bar a {
+    padding-left: 0.25em;
+  }
+  .side-bar h2, .side-bar hr {
+    display: none;
+  }
+  .side-bar-active {
+    -webkit-transform: translate3d(0vw, 0, 0);
+            transform: translate3d(0vw, 0, 0);
+  }
+  .hamburger {
+    position: fixed;
+    z-index: 2;
+    display: block;
+    padding-top: 1.15em;
+  }
+  .hamburger div {
+    background-color: #282c34;
+  }
+  .main-vids {
+    padding-top: 0.003em;
+  }
+  .main-vids h2 {
+    padding-top: 0;
+    padding-left: 3em;
+  }
+  .main-vids h3 {
+    padding-left: 5%;
+  }
+  .main-vids hr {
+    margin-left: 4.7em;
+    width: 70%;
+  }
+  .main-vids .corr-img {
+    padding-left: 3em;
+    width: 80%;
+    height: 70%;
+  }
+  .main-vids iframe {
+    padding-left: 5%;
+    width: 435px;
+    height: 270px;
+  }
+  .main-vids ul {
+    padding-left: 10%;
+  }
+  .main-vids p {
+    padding-left: 5%;
+  }
+}
+/*# sourceMappingURL=prob.css.map */

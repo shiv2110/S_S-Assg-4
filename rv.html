@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signals & Systems</title>
+    <!--
+    <link href = 'https://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet'>
+	-->
+    <link rel = "stylesheet" type = "text/css" href = "styles/prob.css">
+
+
+    <script>
+        const menuSlide = () =>{
+            const hamburger = document.querySelector(".hamburger");
+            const sideBar = document.querySelector(".side-bar");
+            sideBar.classList.toggle("side-bar-active");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="hamburger" onclick="menuSlide()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div class="side-bar">
+        <h2>Contents</h2>
+        <hr>
+        <a href="index.html">Home</a>
+        <div class="hoverable-content">
+            <a href="probability.html">Probability</a>
+            <div class="hoverable-subsub">
+                <a href="probability.html#rop" class="sub-content">Review of Probability</a>
+                <a href="probability.html#pd" class="sub-content">Probability Distributions</a>
+            </div>
+        </div>
+        <a href="rv.html" class="current-topic">Random Variables</a>
+        <a href="covcorr.html">Covarinace & Correlation</a>
+        
+        
+        <div class="hoverable-content">
+            <a href="statistics.html">Statistics</a>
+            <div class="hoverable-subsub">
+                <a href="statistics.html#descriptive-stats" class="sub-content">Descriptive Statistics</a>
+                <a href="statistics.html#inferential-stats" class="sub-content">Inferential Statistics</a>
+            </div>
+        </div>
+           
+        <a href="DE.html">Differential Equations</a>
+        <a href="convolution.html">Convolution of signals</a>
+
+    </div>
+
+
+
+    <div class="main-vids">
+        <div class="topic">
+            <h2>Random Variables</h2>
+            <!-- <hr> -->
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3v9w79NhsfI"
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen></iframe>
+         <div class="brief-info">
+             <p>
+                The above video defines what a random variable is and gives examples of them. <br>
+                The quantities of interest that are determined by the result of the experiment are known as <b>Random Variables</b>.
+             </p>
+         </div>
+            
+
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/dOr0NKyD31Q"
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+         allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>
+                This video defines and gives examples of the different types of random variables: 
+                discrete random variables and continuous random variables.
+                <ul>
+                    <li>A random variable whose set of values is a sequence is said to be <b>discrete</b>. We define PMF (Probability Mass Function)
+                        for such random variables
+                    </li>
+                    <li>A random variable whose set of values is an interval is said to be <b>continuous</b>. We define PDF (Probability Density Function)
+                        for such random variables</li>
+                </ul>
+            </p>
+        </div>
+        
+
+
+</body>

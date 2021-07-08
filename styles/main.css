@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body, html {
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: 'Poppins';
+}
+
+header {
+  position: absolute;
+  padding: 1em;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 2em);
+}
+
+header .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .main .logo {
+  height: 2em;
+  width: 2em;
+}
+
+header .main a {
+  text-decoration: none;
+  color: #282c34;
+  font-size: 1.6em;
+  font-weight: bolder;
+  padding-left: 0.5em;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 55%  auto;
+      grid-template-rows: 55%  auto;
+      grid-template-areas: "info" "side-pic" "team";
+  height: 100vh;
+}
+
+.wrapper section {
+  padding: 3em;
+}
+
+.wrapper section.info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info;
+  padding-top: 4em;
+}
+
+.wrapper section.info .head-slide h1 {
+  padding: 0;
+}
+
+.wrapper section.info .info-slide p {
+  width: 70%;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.wrapper section.info .get-started-btn button {
+  margin-top: 2em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 20px;
+  background-color: #282c34;
+  color: white;
+  font-family: 'Poppins';
+}
+
+.wrapper section.info .get-started-btn button:hover {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.wrapper section.side-pic {
+  background: #404040;
+  background-image: url("./icons/analysis.jfif");
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 10rem;
+  opacity: 0.5;
+}
+
+.wrapper section.team {
+  background-color: #282c34;
+  padding-top: 0;
+  height: 100%;
+}
+
+.wrapper section.team ul {
+  padding-top: 2em;
+  width: calc(100% - 2em);
+}
+
+.wrapper section.team li {
+  font-size: 1em;
+  color: white;
+}
+
+.wrapper section.team .note {
+  color: white;
+  font-size: 14px;
+  padding-left: 1.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+/*
+.side-bar{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: $one-dark;
+    overflow-x: hidden;
+    padding-top: 0;
+  
+    h2{
+      letter-spacing: 2px;
+      padding-left: 1em;
+      color: white;
+      text-transform: uppercase;
+      
+    }
+  
+    hr{
+      width: 52%;
+      margin-left: 1.5em;
+      
+    }
+  
+    a{
+      text-decoration: none;
+      display: block;
+      color: white;
+      padding-top: 2em;
+      padding-left: 1.5em;
+    }
+  
+    a:hover{
+      color: $hover-color;
+    }
+  
+  }
+  
+  .main-vids{
+    position: relative;
+    overflow: hidden;
+    padding-left: 45%;
+    padding-top: 2em;
+    //width: 100%;
+    iframe{
+      margin-top: 3em;
+    }
+  
+    p{
+      padding-top: 2em;
+      //padding-left: 45%;
+      
+    }
+  
+    // iframe{
+    //   position: absolute;
+  
+    // }
+  
+  }*/
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  html {
+    font-size: 18px;
+  }
+  header {
+    background: none;
+  }
+  header h2 {
+    padding-left: 1.9em;
+    margin: 0;
+    padding-top: 0;
+  }
+  header nav {
+    padding-right: 10em;
+  }
+  header li a {
+    padding: 1.8em;
+  }
+  .wrapper {
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    -ms-grid-rows: 60% auto;
+        grid-template-rows: 60% auto;
+        grid-template-areas: "info side-pic" "info team";
+  }
+  section.info {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: info;
+  }
+  section.info h1 {
+    padding-left: 1em;
+    padding-top: 0;
+  }
+  section.side-pic {
+    height: auto !important;
+  }
+  section {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

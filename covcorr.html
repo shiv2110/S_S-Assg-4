@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signals & Systems</title>
+    <!--
+    <link href = 'https://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet'>
+	-->
+    <link rel = "stylesheet" type = "text/css" href = "styles/prob.css">
+
+
+    <script>
+        const menuSlide = () =>{
+            const hamburger = document.querySelector(".hamburger");
+            const sideBar = document.querySelector(".side-bar");
+            sideBar.classList.toggle("side-bar-active");
+        }
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="hamburger" onclick="menuSlide()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div class="side-bar">
+        <h2>Contents</h2>
+        <hr>
+        <a href="index.html">Home</a>
+        <div class="hoverable-content">
+            <a href="probability.html">Probability</a>
+            <div class="hoverable-subsub">
+                <a href="probability.html#rop" class="sub-content">Review of Probability</a>
+                <a href="probability.html#pd" class="sub-content">Probability Distributions</a>
+            </div>
+        </div>
+        <a href="rv.html">Random Variables</a>
+        <a href="covcorr.html" class="current-topic">Covarinace & Correlation</a>
+        
+        
+        <div class="hoverable-content">
+            <a href="statistics.html">Statistics</a>
+            <div class="hoverable-subsub">
+                <a href="statistics.html#descriptive-stats" class="sub-content">Descriptive Statistics</a>
+                <a href="statistics.html#inferential-stats" class="sub-content">Inferential Statistics</a>
+            </div>
+        </div>
+           
+        <a href="DE.html">Differential Equations</a>
+        <a href="convolution.html">Convolution of signals</a>
+
+    </div>
+
+
+
+    <div class="main-vids">
+        <div class="topic">
+            <h2>Covariance and Correlation</h2>
+            <!-- <hr> -->
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Y0Alg8huJk" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+         <div class="brief-info">
+             <p>The above short video gives us a nice intuition of covariance.</p>
+             <ul>
+                 <li>
+                    <b>Covariance</b> is the measure of the relationship between two random variables. Essentially, it is the 
+                    measure of variance
+                    (To know what random variables are, check this page out 👉 <a href="rv.html">Random Variables</a>)
+                 </li>
+                 <li>
+                    It can be seen in two forms - Positive and Negative. <b>Positive Covariance</b> : Two variables move in the same direction,
+                    <b>Negative Covariance</b> : Two variables move in opposite direction
+                 </li>
+             </ul>
+   
+         </div>
+            
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WpZi02ulCvQ"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>The short video above describes Correlation.</p>
+            <ul>
+                <li>While Correlation also measures the relationship between two random variables, unlike covariance,
+                    correlation tells us to what <b>extent is the relationship strong</b>
+                </li>
+                <li>The value of the correlation is between -1 and 1 amd is denoted by r, -1 indicates that the variables are strongly negatively correlated,
+                    1 indicates that the variables are strongly positively related and 0 indicates the absence of correlation
+                </li>
+            </ul>
+        </div>
+
+        <img class="corr-img" src="styles/icons/covcorr.jpg" alt="correlation">
+
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mG__Wpp9dns?start=21" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>For a more detailed explanation of covariance and correlation, watch the above video. It also explains how to calculate
+               them when probability distributions along with the variables are given. Here, the formula will be w.r.t expected values
+            </p>
+        </div>
+        
+
+
+</body>

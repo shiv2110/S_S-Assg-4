@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Signals & Systems</title>
+    <!--
+    <link href = 'https://fonts.googleapis.com/css?family=Montserrat' rel = 'stylesheet'>
+	-->
+    <link rel = "stylesheet" type = "text/css" href = "styles/prob.css">
+
+
+    <script>
+        const menuSlide = () =>{
+            const hamburger = document.querySelector(".hamburger");
+            const sideBar = document.querySelector(".side-bar");
+            sideBar.classList.toggle("side-bar-active");
+        }
+        //document.getElementsByClassName('sub-content').onclick = changeColor;   
+
+        // function changeColor() {
+
+        //     document.body.style.color = "purple";
+        //     return false;
+        // } 
+    </script>
+
+
+
+</head>
+
+<body>
+    <div class="hamburger" onclick="menuSlide()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <div class="side-bar">
+        <h2>Contents</h2>
+        <hr>
+        <a href="index.html">Home</a>
+        <div class="hoverable-content">
+            <a href="probability.html">Probability</a>
+            <div class="hoverable-subsub">
+                <a href="probability.html#rop" class="sub-content">Review of Probability</a>
+                <a href="probability.html#pd" class="sub-content">Probability Distributions</a>
+            </div>
+        </div>
+        
+        <a href="rv.html">Random Variables</a>
+        <a href="covcorr.html">Covarinace & Correlation</a>
+        
+        
+        <div class="hoverable-content">
+            <a href="statistics.html" class="current-topic">Statistics</a>
+            <div class="hoverable-subsub">
+                <a href="#descriptive-stats" class="sub-content">Descriptive Statistics</a>
+                <a href="#inferential-stats" class="sub-content">Inferential Statistics</a>
+            </div>
+        </div>
+           
+        <a href="DE.html">Differential Equations</a>
+        <a href="convolution.html">Convolution of signals</a>
+
+    </div>
+
+
+
+    <div class="main-vids" id="descriptive-stats">
+        <div class="topic">
+            <h2>Descriptive Statistics</h2>
+            <!-- <hr> -->
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL0KQuRyPJoe6KjlUM6iNYgt8d0DwI-IGR"  
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+       
+        <div class="brief-info">
+            <!-- <p>The first video will talk about the basics of statistical data and of a statistical variable.</p> -->
+            <ul>
+                <li>
+                    <b>Statistics</b> is the science for collecting, analysing, interpreting a collection of data. 
+                    Statistics is mainly categorised into two, Descriptive and inferential. 
+                    <b>Descriptive Statistics</b> is concerned with the properties of distribution of data such as its mean, standard deviation, etc. - 
+                    <a href="https://www.youtube.com/watch?v=MXaJ7sa7q-8&list=PL0KQuRyPJoe6KjlUM6iNYgt8d0DwI-IGR">Introduction to Statistics</a> 
+                </li>
+                <li>
+                    For an easier way of reading and comprehending data, we use <b>graphical means</b> of displaying them. 
+                    Based on the type of data set, we choose a suitable method of representation. 
+                    For categorical data, we use Bar Charts and Pie Charts, while for Quantitative Data, we use Stem plots, 
+                    Histograms and Time plots -
+                    <a href="https://www.youtube.com/watch?v=uHRqkGXX55I&list=PL0KQuRyPJoe6KjlUM6iNYgt8d0DwI-IGR&index=2">Plotting</a>
+                </li>
+                <li>
+                    An <b>Outlier</b> is a value in a data set that significantly differs from other values. 
+                    The inclusion of outliers in data sets can greatly skew the summary statistics, 
+                    which is why outliers are often removed from data sets - 
+                    <a href="https://www.youtube.com/watch?v=sK0RY-Qkug4&list=PL0KQuRyPJoe6KjlUM6iNYgt8d0DwI-IGR&index=5">Outliers</a>
+                </li>
+                <li>
+                    A <b>Percentile</b> describes the percentage of data values that fall at or below another data value.
+                    <a href="https://www.youtube.com/watch?v=s6cMpDEzq_4&list=PL0KQuRyPJoe6KjlUM6iNYgt8d0DwI-IGR&index=7">Percentiles</a>
+                </li>
+
+
+            </ul>
+
+            
+
+        </div>
+
+
+        
+    </div>
+
+
+
+    <div class="main-vids" id="inferential-stats">
+        <div class="topic">
+            <h2>Inferential Statistics</h2>
+            <!-- <hr> -->
+        </div>
+
+        <div class="brief-info">
+            <p><b>Inferential Statistics</b> enables you to make predictions from the data. Inferences about population
+                are made by taking samples (subset of population).
+            </p>
+        </div>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XepXtl9YKwc?start=32"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+        <div class="brief-info">
+            <ul>
+                <li>In probability it it usual to suppose that all of the parameters of a distributions
+                    are known, the opposite is true for statistics, where a central problem is to use the observed
+                    data to make inferences about the unknown parameters
+                </li>
+                <li>Any statistic used to estimate the value of an unknown parameter is said to be an <b>estimator</b> of that parameter.
+                    The observed value of the estimator is called the <b>estimate</b>
+                </li>
+                <li>One such type of estimator is the <b>maximum likelihood estimator (MLE).</b>
+                    A good estimate of the unknown parameter 
+                     would be the value of the parameter that maximizes the probability or the likelihood of getting the data we observed
+                </li>
+            </ul>
+            <p>The video above gives us an intuitive explanation of MLE (Maximum Likelihood Estimator) and check out this 👉
+                 <a href="https://online.stat.psu.edu/stat415/lesson/1/1.2">https://online.stat.psu.edu/stat415/lesson/1/1.2s</a> 
+                 to get comfortable with the math.</p>
+
+            <p>Before jumping any further, read about <b>p-values</b> and significance levels here - 
+                <a href="https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/p-value/">https://www.statisticshowto.com/probability-and-statistics/statistics-definitions/p-value/</a>
+            </p>
+
+        </div>
+
+            <h3>Hypothesis Testing</h3>
+
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTNMv857s9WXg9tRi7wHU9cMgL1x140dO"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+        <div class="brief-info">
+            <p>Let us suppose that instead of explicitly estimating the population parameters, we want to test some hypothesis made
+                with the sample, this is where Hypothesis Testing comes in! <br><br>
+                A <b>statistical hypothesis</b> is usually a statement about a set of parameters of a population distribution. It is called
+                a hypothesis because it is not known whether it is true or not. <br><br>
+                Check out the above playlist to learn more about hypothesis testing. <br>
+
+            </p>
+            <ul>
+                <li>Intuitive explanation of Hypothesis Testing (with no math) -
+                    <a href="https://www.youtube.com/watch?v=zR2QLacylqQ&list=PLTNMv857s9WXg9tRi7wHU9cMgL1x140dO&t=5s">Hypothesis Testing with no Math</a>
+                </li>
+                <li><b>Type 1 and Type 2 errors</b> : if a test incorrectly calls for rejecting the null hypothesis when it is indeed correct results in a 
+                    type 1 error whereas, type 2 error, results if the test calls for accepting the null hypothesis when it is false - 
+                    <a href="https://www.youtube.com/watch?v=CJvmp2gx7DQ&list=PLTNMv857s9WXg9tRi7wHU9cMgL1x140dO&index=2">Type 1 and Type 2 Errors</a>
+                </li>
+                <li>The first type of Hypothesis Testing is that of an unknown mean and known variance or the <b>Z-Test</b> -
+                    <a href="https://www.youtube.com/watch?v=2GU_R7G5m-8&list=PLTNMv857s9WXg9tRi7wHU9cMgL1x140dO&index=3">Case of known variance</a>
+                </li>
+                <li>The second case or the common case is that of an unknown variance or the <b>T-Test</b> -
+                    <a href="https://www.youtube.com/watch?v=Z8E3hi8INZk&list=PLTNMv857s9WXg9tRi7wHU9cMgL1x140dO&index=4">Case of unknown variance</a>
+                </li>
+                <li>An important test is the <b>Chi-squared</b> Test. They test a theoretical categorical distribution against observed categorical
+                    distribution. The most important chi-squared test is that of a <b>goodness of fit</b> test. Statistical tests that determine whether a given
+                    probabilistic mechansm is appropriate are called goodness of fit tests - 
+                    <a href="https://www.youtube.com/watch?v=ZNXso_riZag&list=PLTNMv857s9WXg9tRi7wHU9cMgL1x140dO&index=7">Chi-squared Goodness of Fit</a>
+                </li>
+            </ul>
+
+        </div>
+
+            <h3>Regression</h3>
+ 
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLTNMv857s9WUI1Nz4SssXDKAELESXz-bi"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
+        <div class="brief-info">
+            <p>Many problems are concerned with determining a relationship between a set of variables. Knowledge of such a relationship
+                would enable us to predict the output for various other values of input not given in the dataset.
+            </p>
+            <ul>
+                <li>The output is a <b>dependent variable</b> and the set of inputs are called <b>independent variables or features</b></li>
+                <li>The simplest form of regression is <b>Simple Linear Regression</b> : This model supposes a linear relationship between the output
+                    and a single independent variable
+                </li>
+                <li>A bit more realistic form of regression is <b>Multiple Linear Regression</b> : Here, the output is dependent on more than one
+                    independent variable with a linear relationship
+                </li>
+                <li>The form of regression that is more rea world like is the <b>Polynomial Regression</b> : The relationship between the dependent
+                    and independent variables is non-linear
+                </li>
+                <li>The input points are plotted in a scatter plot and the best fit line or a curve is drawn after obtaining the estimates
+                    of the regression coefficients. The estimator used is the least square estimator to estimate the regression parameters
+                </li>
+            </ul>
+            <p>To start off with a detailed information on Simple Linear Regression, check out Andrew Ng's explanations in this playlist
+                👉 <a href="https://youtube.com/playlist?list=PLJs7lEb1U5pYnrI0Wn4mzPmppVqwERL_4">https://youtube.com/playlist?list=PLJs7lEb1U5pYnrI0Wn4mzPmppVqwERL_4</a>
+            </p>
+        </div>
+
+
+
+
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kyjlxsLW1Is" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <div class="brief-info">
+            <p>Have a test on statistics in an hour or so? Check out the above video to recollect some of the concepts in statistics.</p>
+            <!-- <ul>
+                <li>Data is categorised into categorical and numerical types. Categorical data is classified into two types
+                    : Nominal and Ordinal, while Numerical data is classified into discrete and continuous types
+                </li>
+                <li>The video also explains about probability distributions. To know more about different distributions
+                    check this out 👉 <a href="probability.html">Review of Probability and Probability Distributions</a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul> -->
+        </div>
+    </div>
+
+    <!-- Data types: Categorical, Numerical  -  1:20
+    Distributions, Probability Density Function  -  8:11
+    Sampling Distributions  -  11:45
+    Sampling and Estimation  -  13:54
+    Parameters in Statistics  -  19:53
+    Hypothesis Testing  -  22:39
+    p-values  -  31:28 -->
+
+     <!-- Next topic is Distributions.
+     Under this, we get to know about the Probability Density Function, Sampling Distribution, 
+     which speaks of good ways to select a sample. Next comes the Estimation which gives the confidence interval. 
+     Next, the common parameters in Statistics like, mean, standard deviation, correlation, etc., are explained. 
+     Next topic is about Hypothesis Testing which is used to test whether the hypothesis we made is actually true or not by using reverse 
+     approach. The final topic is p-values. Hypothesis tests tell if our sample is extreme enough
+      
+     to reject the null and p-values then measure how extreme our sample is. 
+     If p-value is less than level of significance, reject Null hypothesis. -->
+
+
+</body>
