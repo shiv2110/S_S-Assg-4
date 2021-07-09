@@ -4,9 +4,10 @@ body, html {
 }
 
 body {
+  overflow-x: hidden;
   height: 100%;
   font-family: 'Poppins';
-  font-size: 12px;
+  font-size: 15px;
 }
 
 header {
@@ -107,6 +108,7 @@ header .main a {
   background-color: #282c34;
   padding-top: 0;
   height: 100%;
+  width: 100%;
 }
 
 .wrapper section.team ul {
@@ -115,7 +117,7 @@ header .main a {
 }
 
 .wrapper section.team li {
-  font-size: 1em;
+  font-size: 16px;
   color: white;
 }
 
@@ -190,13 +192,13 @@ header .main a {
   }*/
 @media only screen and (min-width: 768px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 @media only screen and (min-width: 1020px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
   header {
     background: none;

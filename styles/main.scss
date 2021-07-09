@@ -7,9 +7,10 @@ body, html{
     margin: 0;
 }
 body{
+    overflow-x: hidden;
     height: 100%;
     font-family: 'Poppins';
-    font-size: 12px;
+    font-size: 15px;
     //font-size: 15px;
     //display: none;
 }
@@ -136,6 +137,7 @@ header{
         background-color: $one-dark;
         padding-top: 0;
         height: 100%;
+        width: 100%;
         //align-content: center;
 
         ul{
@@ -146,7 +148,7 @@ header{
         }
 
         li{
-            font-size: 1em;
+            font-size: 16px;
             color: white;
             //text-align: center;
         }
@@ -225,14 +227,14 @@ header{
 
 @media only screen and (min-width: 768px) {
     html{
-        font-size: 18px;
+        font-size: 16px;
     }
 
 }
 
 @media only screen and (min-width: 1020px) {
     html{
-        font-size: 18px;
+        font-size: 16px;
     }
     header{
         background: none;
