@@ -87,10 +87,11 @@ header .main a {
   background-color: #282c34;
   color: white;
   font-family: 'Poppins';
+  border: none;
 }
 
 .wrapper section.info .get-started-btn button:hover {
-  background-color: #d3d3d3;
+  background-color: #696969;
   color: black;
 }
 

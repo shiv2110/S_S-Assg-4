@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 $one-dark: #282c34;
-$hover-color: #d3d3d3;
+$hover-color: #696969;
 
 body, html{
     margin: 0;
@@ -105,6 +105,7 @@ header{
             background-color: $one-dark;
             color: white;
             font-family: 'Poppins';
+            border: none;
         }
 
         .get-started-btn button:hover{
